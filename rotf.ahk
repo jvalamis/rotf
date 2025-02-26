@@ -15,6 +15,7 @@ Thread, interrupt, 0
 #Include %A_ScriptDir%\partybars.ahk
 #Include %A_ScriptDir%\shieldself.ahk
 #Include %A_ScriptDir%\mousemove.ahk
+#Include %A_ScriptDir%\screencapture.ahk
 
 SendInput, {x down}
 Sleep 100
@@ -61,10 +62,14 @@ farm() {
 ; +e::craft()
 ; e::partybars()
 
+
+; utility keys
 F7::getDebuffSlotColors()
 F8::getBuffPixelColor()
 F9::getPixelColor()
 F10::getTechniquePixels()
+F12::captureScreen()
+
 ; debug key
 ; F11::isWeaknessReady()
 
