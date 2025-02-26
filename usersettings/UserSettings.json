@@ -1,0 +1,107 @@
+{
+  "EulaVersion": 3,
+  "WindowLocations": {
+    "Panel_DefensiveTarget": {
+      "X": -182,
+      "Y": -322,
+      "W": 200,
+      "H": 66
+    },
+    "Panel_OffensiveTarget": {
+      "X": 298,
+      "Y": -239,
+      "W": 200,
+      "H": 66
+    },
+    "Panel_Chat": {
+      "X": -924,
+      "Y": -208,
+      "W": 510,
+      "H": 220
+    },
+    "UI Trade": {
+      "X": 412,
+      "Y": 34,
+      "W": 450,
+      "H": 530
+    },
+    "Panel_NpcInteraction": {
+      "X": 195,
+      "Y": 69,
+      "W": 556,
+      "H": 455
+    },
+    "Panel_Social": {
+      "X": -90,
+      "Y": 20,
+      "W": 560,
+      "H": 680
+    },
+    "Panel_CharacterSheet": {
+      "X": -280,
+      "Y": 186,
+      "W": 583,
+      "H": 544
+    },
+    "GroupMembers": {
+      "X": 12,
+      "Y": -177,
+      "W": 200,
+      "H": 338
+    },
+    "Panel_UICodex": {
+      "X": -9,
+      "Y": -39,
+      "W": 733,
+      "H": 501
+    },
+    "Panel_MacroBar": {
+      "X": 495,
+      "Y": 427,
+      "W": 448,
+      "H": 54
+    },
+    "Player": {
+      "X": 16,
+      "Y": 26,
+      "W": 200,
+      "H": 95
+    },
+    "Panel_OtherChats": {
+      "X": 443,
+      "Y": -262,
+      "W": 510,
+      "H": 220
+    }
+  },
+  "WindowSettingValues": {
+    "Player": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    }
+  },
+  "Macros": [
+    {
+      "MacroName": "New Macro",
+      "MacroText": ""
+    }
+  ],
+  "BrightnessScale": 0.0,
+  "Realm": "Black Moon (2)",
+  "Version": 3,
+  "IntValues": {
+    "StartHidden_Panel_MacroBar": 1,
+    "EulaVersion": 3
+  },
+  "FloatValues": {
+    "CustomScale_Panel_WindowSettings": 150.0,
+    "BrightnessScale": 2.0
+  },
+  "StringValues": {
+    "6314SteamLastSelectedCharacter": "Demetrium",
+    "Realm": "Black Moon (2)"
+  }
+}

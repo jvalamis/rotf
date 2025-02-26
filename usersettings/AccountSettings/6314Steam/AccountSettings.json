@@ -1,0 +1,15 @@
+{
+  "Version": 3,
+  "IntValues": {
+    "StartHidden_Panel_MacroBar": 1,
+    "EulaVersion": 3
+  },
+  "FloatValues": {
+    "CustomScale_Panel_WindowSettings": 150.0,
+    "BrightnessScale": 0.0
+  },
+  "StringValues": {
+    "6314SteamLastSelectedCharacter": "Demetrium",
+    "Realm": "Black Moon (0)"
+  }
+}

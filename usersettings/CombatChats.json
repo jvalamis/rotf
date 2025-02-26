@@ -1,0 +1,18 @@
+[
+  {
+    "ChatName": "Combat",
+    "ChatWindowType": 1,
+    "ChatType": 1,
+    "AllowedChannelTypes": [
+      16,
+      42,
+      17,
+      18,
+      43,
+      19,
+      20,
+      24,
+      44
+    ]
+  }
+]

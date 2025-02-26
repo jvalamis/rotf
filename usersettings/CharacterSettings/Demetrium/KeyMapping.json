@@ -1,0 +1,562 @@
+{
+  "None": {
+    "Key": 0,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Left": {
+    "Key": 97,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "Right": {
+    "Key": 100,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "Forward": {
+    "Key": 119,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "Back": {
+    "Key": 115,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "TurnLeft": {
+    "Key": 113,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "TurnRight": {
+    "Key": 101,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "Jump": {
+    "Key": 32,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "AutoRun": {
+    "Key": 300,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "Action0": {
+    "Key": 49,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action1": {
+    "Key": 50,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action2": {
+    "Key": 51,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action3": {
+    "Key": 52,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action4": {
+    "Key": 53,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action5": {
+    "Key": 54,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action6": {
+    "Key": 55,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Action7": {
+    "Key": 56,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Utility0": {
+    "Key": 49,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Utility1": {
+    "Key": 50,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Utility2": {
+    "Key": 51,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Utility3": {
+    "Key": 52,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Utility4": {
+    "Key": 53,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Utility5": {
+    "Key": 54,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General0": {
+    "Key": 257,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General1": {
+    "Key": 258,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General2": {
+    "Key": 259,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General3": {
+    "Key": 260,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General4": {
+    "Key": 261,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General5": {
+    "Key": 262,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General6": {
+    "Key": 263,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "General7": {
+    "Key": 264,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Consider": {
+    "Key": 99,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "ToggleRest": {
+    "Key": 120,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "AutoAttack": {
+    "Key": 118,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "ToggleCharacterSheet": {
+    "Key": 105,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "ToggleQuestJournal": {
+    "Key": 106,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "ToggleCodex": {
+    "Key": 98,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "Reply": {
+    "Key": 114,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetSelf": {
+    "Key": 282,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetSelfOffensively": {
+    "Key": 282,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetGroupMember1": {
+    "Key": 283,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetGroupMember2": {
+    "Key": 284,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetGroupMember3": {
+    "Key": 285,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetGroupMember4": {
+    "Key": 286,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "TargetGroupMember5": {
+    "Key": 287,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "SmartTarget": {
+    "Key": 9,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "ToggleUi": {
+    "Key": 290,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "ToggleFreeCamera": {
+    "Key": 293,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "ToggleAllBags": {
+    "Key": 111,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "ShowDebug": {
+    "Key": 292,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "SheathWeapons": {
+    "Key": 122,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "ToggleChat": {
+    "Key": 13,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Sprint": {
+    "Key": 304,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": true
+  },
+  "PetCommand1": {
+    "Key": 49,
+    "Ctrl": true,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "PetCommand2": {
+    "Key": 50,
+    "Ctrl": true,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "PetCommand3": {
+    "Key": 51,
+    "Ctrl": true,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "PetCommand4": {
+    "Key": 52,
+    "Ctrl": true,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "PetCommand5": {
+    "Key": 53,
+    "Ctrl": true,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "PetCommand6": {
+    "Key": 54,
+    "Ctrl": true,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet1Ability1": {
+    "Key": 257,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet1Ability2": {
+    "Key": 258,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet1Ability3": {
+    "Key": 259,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet1Ability4": {
+    "Key": 260,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet2Ability1": {
+    "Key": 261,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet2Ability2": {
+    "Key": 262,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet2Ability3": {
+    "Key": 263,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Pet2Ability4": {
+    "Key": 264,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "SelectPet1": {
+    "Key": 283,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "SelectPet2": {
+    "Key": 284,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "SelectPet3": {
+    "Key": 285,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "SelectPet4": {
+    "Key": 286,
+    "Ctrl": false,
+    "Shft": true,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Technique0": {
+    "Key": 49,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": true,
+    "IgnoreModifiers": false
+  },
+  "Technique1": {
+    "Key": 50,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": true,
+    "IgnoreModifiers": false
+  },
+  "Technique2": {
+    "Key": 51,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": true,
+    "IgnoreModifiers": false
+  },
+  "Technique3": {
+    "Key": 52,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": true,
+    "IgnoreModifiers": false
+  },
+  "Stance0": {
+    "Key": 116,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Stance1": {
+    "Key": 0,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Stance2": {
+    "Key": 0,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "ToggleSocialWindow": {
+    "Key": 108,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  },
+  "Climb": {
+    "Key": 0,
+    "Ctrl": false,
+    "Shft": false,
+    "Alt": false,
+    "IgnoreModifiers": false
+  }
+}

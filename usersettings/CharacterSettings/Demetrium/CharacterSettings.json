@@ -1,0 +1,337 @@
+{
+  "WindowLocations": {
+    "Panel_DefensiveTarget": {
+      "X": -428,
+      "Y": -102,
+      "W": 200,
+      "H": 66
+    },
+    "Panel_OffensiveTarget": {
+      "X": -207,
+      "Y": -103,
+      "W": 200,
+      "H": 66
+    },
+    "Panel_Chat": {
+      "X": -933,
+      "Y": -173,
+      "W": 602,
+      "H": 351
+    },
+    "UI Trade": {
+      "X": -371,
+      "Y": 117,
+      "W": 450,
+      "H": 530
+    },
+    "Panel_NpcInteraction": {
+      "X": -318,
+      "Y": 158,
+      "W": 556,
+      "H": 455
+    },
+    "Panel_Social": {
+      "X": 576,
+      "Y": 84,
+      "W": 560,
+      "H": 680
+    },
+    "Panel_CharacterSheet": {
+      "X": -375,
+      "Y": 101,
+      "W": 583,
+      "H": 544
+    },
+    "GroupMembers": {
+      "X": 25,
+      "Y": -122,
+      "W": 200,
+      "H": 429
+    },
+    "Panel_UICodex": {
+      "X": -136,
+      "Y": 164,
+      "W": 733,
+      "H": 501
+    },
+    "Panel_MacroBar": {
+      "X": -302,
+      "Y": -317,
+      "W": 602,
+      "H": 52
+    },
+    "Player": {
+      "X": 16,
+      "Y": 26,
+      "W": 200,
+      "H": 95
+    },
+    "Panel_OtherChats": {
+      "X": 361,
+      "Y": -151,
+      "W": 578,
+      "H": 379
+    },
+    "UIBag_7d0a57e9-58bb-447e-9e4f-e8a66f81464e": {
+      "X": 356,
+      "Y": -133,
+      "W": 90,
+      "H": 133
+    },
+    "UIBag_2d1ee19d-5fe3-ef11-83d9-7c1e52456b5c": {
+      "X": 588,
+      "Y": -3,
+      "W": 90,
+      "H": 211
+    },
+    "UIBag_738eff1e-9d14-4d4f-b73b-893e9cc92e11": {
+      "X": 867,
+      "Y": 71,
+      "W": 90,
+      "H": 133
+    },
+    "Panel_WindowSettings": {
+      "X": -72,
+      "Y": 100,
+      "W": 317,
+      "H": 276
+    },
+    "Panel_Dialogue_Perception": {
+      "X": 247,
+      "Y": 143,
+      "W": 556,
+      "H": 395
+    },
+    "UI QuantitySelector": {
+      "X": 37,
+      "Y": 179,
+      "W": 250,
+      "H": 150
+    },
+    "Panel_Crafting": {
+      "X": 172,
+      "Y": 242,
+      "W": 770,
+      "H": 410
+    },
+    "UIBag_ee22c3b8-f58b-4f79-9569-cde355d8c3ce": {
+      "X": 728,
+      "Y": -2,
+      "W": 90,
+      "H": 211
+    },
+    "UIBag_9573a809-3a9d-4dfc-bd98-ca7c21c26d63": {
+      "X": 869,
+      "Y": -1,
+      "W": 90,
+      "H": 211
+    },
+    "UIBag_7c7ef9bb-87a7-430e-9447-4c3e0799a99d": {
+      "X": 306,
+      "Y": -3,
+      "W": 90,
+      "H": 211
+    },
+    "UIBag_c15dfe7b-b4fe-4bac-858f-352cf77ef432": {
+      "X": 448,
+      "Y": -3,
+      "W": 90,
+      "H": 211
+    },
+    "UIBag_4a755a68-f3f4-474d-8cfb-85e109968d09": {
+      "X": -288,
+      "Y": 231,
+      "W": 90,
+      "H": 250
+    },
+    "UIBag_04f17fd2-b86d-491a-8b0b-196ae0e21f82": {
+      "X": -429,
+      "Y": 229,
+      "W": 90,
+      "H": 250
+    },
+    "UIBag_cdf07dc9-0682-4adb-a164-536d8388db2f": {
+      "X": -569,
+      "Y": 232,
+      "W": 90,
+      "H": 250
+    },
+    "Panel_ChatTabSettings": {
+      "X": -99,
+      "Y": 83,
+      "W": 440,
+      "H": 508
+    },
+    "Loot": {
+      "X": 0,
+      "Y": 0,
+      "W": 205,
+      "H": 196
+    },
+    "Panel_LootPlayer": {
+      "X": -184,
+      "Y": 63,
+      "W": 273,
+      "H": 574
+    },
+    "Panel_BuffBar": {
+      "X": -956,
+      "Y": 536,
+      "W": -5,
+      "H": 228
+    },
+    "Panel_MacroEditor": {
+      "X": 221,
+      "Y": 24,
+      "W": 400,
+      "H": 138
+    }
+  },
+  "WindowSettingValues": {
+    "Player": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_2d1ee19d-5fe3-ef11-83d9-7c1e52456b5c": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_738eff1e-9d14-4d4f-b73b-893e9cc92e11": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": false,
+      "CustomScale": 150.0
+    },
+    "UIBag_7d0a57e9-58bb-447e-9e4f-e8a66f81464e": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": false,
+      "CustomScale": 150.0
+    },
+    "Loot": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": false,
+      "CustomScale": 100.0
+    },
+    "Panel_CharacterSheet": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": false,
+      "CustomScale": 130.0
+    },
+    "Panel_Chat": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": false,
+      "CustomScale": 100.0
+    },
+    "UIBag_9573a809-3a9d-4dfc-bd98-ca7c21c26d63": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_ee22c3b8-f58b-4f79-9569-cde355d8c3ce": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_7c7ef9bb-87a7-430e-9447-4c3e0799a99d": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_c15dfe7b-b4fe-4bac-858f-352cf77ef432": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_4a755a68-f3f4-474d-8cfb-85e109968d09": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_04f17fd2-b86d-491a-8b0b-196ae0e21f82": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "UIBag_cdf07dc9-0682-4adb-a164-536d8388db2f": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 150.0
+    },
+    "Panel_MacroBar": {
+      "Opacity": 100.0,
+      "ShowFrame": true,
+      "DarkenOnHover": true,
+      "LockWindow": true,
+      "CustomScale": 100.0
+    }
+  },
+  "Macros": [
+    {
+      "MacroName": "MACRO1",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO2",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO3",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO4",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO5",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO6",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO7",
+      "MacroText": ""
+    },
+    {
+      "MacroName": "MACRO8",
+      "MacroText": ""
+    }
+  ],
+  "Version": 3,
+  "IntValues": {
+    "StartHidden_Panel_MacroBar": 1
+  },
+  "FloatValues": {},
+  "StringValues": {}
+}
