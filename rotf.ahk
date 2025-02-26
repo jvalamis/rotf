@@ -16,6 +16,7 @@ Thread, interrupt, 0
 #Include %A_ScriptDir%\shieldself.ahk
 #Include %A_ScriptDir%\mousemove.ahk
 #Include %A_ScriptDir%\screencapture.ahk
+#Include %A_ScriptDir%\autoupdate.ahk
 
 SendInput, {x down}
 Sleep 100
@@ -88,7 +89,7 @@ F12::captureScreen()
 ; F11::isWeaknessReady()
 
 reload() {
-    Reload 
+    autoUpdate()
 }
 
 Esc::reload()
