@@ -45,6 +45,19 @@ farm() {
     ; tryPrayerfulRest()
 }
 
+technique() {
+    moveMouse(708, 893)  ; Move to first coordinate
+    sleep 100
+    click
+    sleep 50
+    moveMouse(827, 657)  ; Move to second coordinate
+    click
+    
+    press("1", "alt")
+    press("4", "alt")
+    press("3", "alt")
+}
+
 ; craft() {
 ;     global toggle := false
 ;     loop {
@@ -67,7 +80,8 @@ farm() {
 F7::getDebuffSlotColors()
 F8::getBuffPixelColor()
 F9::getPixelColor()
-F10::getTechniquePixels()
+; F10::getTechniquePixels()
+F10::technique()
 F12::captureScreen()
 
 ; debug key
