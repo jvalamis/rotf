@@ -6,6 +6,9 @@ SendMode Input
 SetBatchLines -1
 Thread, interrupt, 0
 
+; Release all modifiers at startup
+SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
+
 #Include %A_ScriptDir%\press.ahk
 #Include %A_ScriptDir%\getpixelcolor.ahk
 #Include %A_ScriptDir%\islowmana.ahk
@@ -17,10 +20,11 @@ Thread, interrupt, 0
 #Include %A_ScriptDir%\mousemove.ahk
 #Include %A_ScriptDir%\screencapture.ahk
 
+; Release modifiers after x key press
 SendInput, {x down}
 Sleep 100
 SendInput, {x up}
-
+SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
 
 farm() {
     moveMouse(708, 893)  ; Move to first coordinate
@@ -85,6 +89,9 @@ F12::captureScreen()
 ; F11::isWeaknessReady()
 
 reload() {
+    ; Release modifiers before reload
+    SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
+    Sleep, 20
     Reload 
 }
 
