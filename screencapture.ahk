@@ -5,6 +5,7 @@ SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
 #Include %A_ScriptDir%\getpixelcolor.ahk
+#Include %A_ScriptDir%\gdip\Gdip.ahk
 
 global CapturedImage
 
@@ -16,25 +17,23 @@ captureScreen() {
         return
     }
     
-    ; Get window dimensions and position
+    ; Get window dimensions
     WinGetPos, x, y, width, height, ahk_id %hwnd%
     
     ; Activate window and wait a moment
     WinActivate, ahk_id %hwnd%
     Sleep, 100
     
-    ; Take screenshot
+    ; Take screenshot to clipboard
     Send, {PrintScreen}
     Sleep, 100
     
-    ; Create a GUI to save the screenshot
-    Gui, Screenshot:New
-    Gui, Screenshot:Add, Picture,, % "HBITMAP:*" ClipboardAll
-    Gui, Screenshot:Hide
-    
-    ; Save to PNG
-    Gui, Screenshot:Save, %A_ScriptDir%\game_capture.png
-    Gui, Screenshot:Destroy
+    ; Convert clipboard to file using GDI+
+    pToken := Gdip_Startup()
+    pBitmap := Gdip_CreateBitmapFromClipboard()
+    Gdip_SaveBitmapToFile(pBitmap, A_ScriptDir "\game_capture.png", 100)
+    Gdip_DisposeImage(pBitmap)
+    Gdip_Shutdown(pToken)
     
     ; Show viewer
     ShowCaptureViewer(width, height)
