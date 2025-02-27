@@ -35,9 +35,6 @@ farm() {
     press("3")
     press("3", "shift")
     ; tryPrayerfulRest()
-    press("1", "alt")
-    press("4", "alt")
-    press("3", "alt")
     press("3")
     press("2")
 
