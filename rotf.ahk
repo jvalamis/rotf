@@ -33,7 +33,7 @@ farm() {
     click
 
     press("3")
-    press("3")
+    press("6")
     press("3", "shift")
     ; tryPrayerfulRest()
     press("3")
