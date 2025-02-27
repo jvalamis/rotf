@@ -15,15 +15,18 @@ captureScreen() {
     ; Start up GDI+
     pToken := Gdip_Startup()
     
-    ; Get the Pantheon window
-    WinGetPos, gameX, gameY, gameWidth, gameHeight, Pantheon
-    if (!gameWidth) {  ; If game window not found
+    ; Get the Pantheon window handle
+    WinGet, hwnd, ID, Pantheon
+    if (!hwnd) {
         MsgBox, Pantheon window not found!
         return
     }
     
-    ; Create bitmap from game window area
-    pBitmap := Gdip_BitmapFromScreen(gameX "|" gameY "|" gameWidth "|" gameHeight)
+    ; Get window dimensions
+    WinGetPos,,, width, height, ahk_id %hwnd%
+    
+    ; Capture the window
+    pBitmap := Gdip_BitmapFromHWND(hwnd)
     
     ; Save to file
     Gdip_SaveBitmapToFile(pBitmap, A_ScriptDir "\game_capture.png", 100)
@@ -33,7 +36,7 @@ captureScreen() {
     Gdip_Shutdown(pToken)
     
     ; Show viewer
-    ShowCaptureViewer(gameWidth, gameHeight)
+    ShowCaptureViewer(width, height)
 }
 
 ShowCaptureViewer(imgWidth, imgHeight) {
