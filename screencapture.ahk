@@ -5,17 +5,11 @@ SetBatchLines, -1
 SetWorkingDir, %A_ScriptDir%
 
 #Include %A_ScriptDir%\getpixelcolor.ahk
-#Include %A_ScriptDir%\gdip\Gdip.ahk
 
-; Declare GUI control variable as global
 global CapturedImage
 
-; Capture the game window and save it
 captureScreen() {
-    ; Start up GDI+
-    pToken := Gdip_Startup()
-    
-    ; Get the Pantheon window handle
+    ; Get the Pantheon window
     WinGet, hwnd, ID, Pantheon
     if (!hwnd) {
         MsgBox, Pantheon window not found!
@@ -23,17 +17,25 @@ captureScreen() {
     }
     
     ; Get window dimensions
-    WinGetPos,,, width, height, ahk_id %hwnd%
+    WinGetPos, x, y, width, height, ahk_id %hwnd%
+    
+    ; Take screenshot
+    WinActivate, ahk_id %hwnd%
+    Sleep, 100  ; Give window time to activate
+    
+    ; Create GUI to hold screenshot
+    Gui, Screenshot:New
+    Gui, Screenshot:Add, Picture, x0 y0 w%width% h%height% vScreenshot
+    Gui, Screenshot:Show, Hide w%width% h%height%
     
     ; Capture the window
-    pBitmap := Gdip_BitmapFromHWND(hwnd)
+    WinWaitActive, ahk_id %hwnd%
+    Sleep, 100
+    PrintWindow(hwnd, "Screenshot")
     
     ; Save to file
-    Gdip_SaveBitmapToFile(pBitmap, A_ScriptDir "\game_capture.png", 100)
-    
-    ; Clean up
-    Gdip_DisposeImage(pBitmap)
-    Gdip_Shutdown(pToken)
+    SaveScreenshot("Screenshot", A_ScriptDir "\game_capture.png")
+    Gui, Screenshot:Destroy
     
     ; Show viewer
     ShowCaptureViewer(width, height)
@@ -61,4 +63,20 @@ return
 ViewerGuiClose:
     Gui, Viewer:Destroy
     FileDelete, %A_ScriptDir%\game_capture.png
-return 
+return
+
+; Helper functions for capturing window
+PrintWindow(hwnd, control) {
+    SendMessage, 0x0B, 0, 0,, ahk_id %hwnd%  ; WM_SETREDRAW
+    ControlGet, hwndControl, Hwnd,, %control%, A
+    DllCall("PrintWindow", "Ptr", hwnd, "Ptr", hwndControl, "Uint", 0)
+    SendMessage, 0x0B, 1, 0,, ahk_id %hwnd%  ; WM_SETREDRAW
+    WinRedraw, ahk_id %hwnd%
+}
+
+SaveScreenshot(control, filename) {
+    ControlGet, hwnd, Hwnd,, %control%, A
+    pBitmap := Gdip_CreateBitmapFromHBITMAP(DllCall("GetWindowDC", "Ptr", hwnd))
+    Gdip_SaveBitmapToFile(pBitmap, filename)
+    Gdip_DisposeImage(pBitmap)
+} 
