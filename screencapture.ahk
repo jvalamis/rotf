@@ -24,8 +24,8 @@ captureScreen() {
     WinActivate, ahk_id %hwnd%
     Sleep, 100
     
-    ; Take screenshot to clipboard
-    Send, {PrintScreen}
+    ; Take screenshot of active window to clipboard
+    Send, !{PrintScreen}  ; Alt+PrintScreen captures active window only
     Sleep, 100
     
     ; Convert clipboard to file using GDI+
