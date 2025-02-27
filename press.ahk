@@ -29,35 +29,31 @@ SetWorkingDir, %A_ScriptDir%
 press(key, modifier := "") {
     ; First release all modifiers to ensure clean state
     SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
-    Sleep, 20
+    Sleep, 50  ; Longer delay to ensure clean state
 
     if (modifier = "shift") {
-        ; Hold shift, press key twice, release shift
-        SendInput, {LShift down}
-        Sleep, 20
-        SendInput, {%key%}
-        Sleep, 20
-        SendInput, {%key%}  ; Send key twice to ensure it registers
-        Sleep, 20
+        ; Hold shift longer and use Blind
+        SendInput, {Blind}{LShift down}
+        Sleep, 50
+        SendInput, {Blind}{%key%}
+        Sleep, 50
         SendInput, {LShift up}
     } else if (modifier = "alt") {
-        ; Hold alt, press key twice, release alt
-        SendInput, {LAlt down}
-        Sleep, 20
-        SendInput, {%key%}
-        Sleep, 20
-        SendInput, {%key%}  ; Send key twice to ensure it registers
-        Sleep, 20
+        ; Hold alt longer and use Blind
+        SendInput, {Blind}{LAlt down}
+        Sleep, 50
+        SendInput, {Blind}{%key%}
+        Sleep, 50
         SendInput, {LAlt up}
     } else {
         ; Just press the key normally
         SendInput, {%key% down}
-        Sleep, 20
+        Sleep, 30
         SendInput, {%key% up}
     }
 
     ; Make sure all modifiers are released
     SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
-    Sleep, 20
+    Sleep, 50
 }
 

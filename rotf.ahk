@@ -21,9 +21,7 @@ SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
 #Include %A_ScriptDir%\screencapture.ahk
 
 ; Release modifiers after x key press
-SendInput, {x down}
-Sleep 100
-SendInput, {x up}
+press("x")
 SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
 
 farm() {
