@@ -32,17 +32,21 @@ press(key, modifier := "") {
     Sleep, 20
 
     if (modifier = "shift") {
-        ; Hold shift, press key, release shift
+        ; Hold shift, press key twice, release shift
         SendInput, {LShift down}
         Sleep, 20
         SendInput, {%key%}
         Sleep, 20
+        SendInput, {%key%}  ; Send key twice to ensure it registers
+        Sleep, 20
         SendInput, {LShift up}
     } else if (modifier = "alt") {
-        ; Hold alt, press key, release alt
+        ; Hold alt, press key twice, release alt
         SendInput, {LAlt down}
         Sleep, 20
         SendInput, {%key%}
+        Sleep, 20
+        SendInput, {%key%}  ; Send key twice to ensure it registers
         Sleep, 20
         SendInput, {LAlt up}
     } else {
