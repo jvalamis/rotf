@@ -36,6 +36,7 @@ farm() {
     press("3", "shift")
     ; tryPrayerfulRest()
     press("3")
+    press("e", "shift")
     press("2")
 
     ; healParty()
