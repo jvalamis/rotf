@@ -27,32 +27,33 @@ SetWorkingDir, %A_ScriptDir%
 ; }
 
 press(key, modifier := "") {
-    ; SendInput, {Blind}{LShift down}{Blind}{LAlt down}{Blind}{LCtrl down} 
-    ; sleep 10
-    ; SendInput, {LShift up}{LAlt up}{LCtrl up}  ; Ensure no modifier keys are stuck
+    ; First release all modifiers to ensure clean state
+    SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
+    Sleep, 20
 
     if (modifier = "shift") {
-        SendInput, {Blind}{LShift down}
-        Sleep, 20  ; Small delay for key registration
-        SendInput, {%key%}
+        ; Hold shift, press key, release shift
+        SendInput, {LShift down}
+        Sleep, 20
         SendInput, {%key%}
         Sleep, 20
         SendInput, {LShift up}
     } else if (modifier = "alt") {
-        SendInput, {Blind}{LAlt down}
+        ; Hold alt, press key, release alt
+        SendInput, {LAlt down}
         Sleep, 20
-        SendInput, {%key%}
         SendInput, {%key%}
         Sleep, 20
         SendInput, {LAlt up}
     } else {
+        ; Just press the key normally
         SendInput, {%key% down}
         Sleep, 20
         SendInput, {%key% up}
     }
 
-    ; SendInput, {Blind}{LShift down}{Blind}{LAlt down}{Blind}{LCtrl down} 
-    ; sleep 10
-    ; SendInput, {LShift up}{LAlt up}{LCtrl up}  ; Ensure no modifier keys are stuck
+    ; Make sure all modifiers are released
+    SendInput, {LShift up}{RShift up}{LAlt up}{RAlt up}{LCtrl up}{RCtrl up}
+    Sleep, 20
 }
 
