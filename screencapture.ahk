@@ -16,25 +16,24 @@ captureScreen() {
         return
     }
     
-    ; Get window dimensions
+    ; Get window dimensions and position
     WinGetPos, x, y, width, height, ahk_id %hwnd%
     
-    ; Take screenshot
+    ; Activate window and wait a moment
     WinActivate, ahk_id %hwnd%
-    Sleep, 100  ; Give window time to activate
-    
-    ; Create GUI to hold screenshot
-    Gui, Screenshot:New
-    Gui, Screenshot:Add, Picture, x0 y0 w%width% h%height% vScreenshot
-    Gui, Screenshot:Show, Hide w%width% h%height%
-    
-    ; Capture the window
-    WinWaitActive, ahk_id %hwnd%
     Sleep, 100
-    PrintWindow(hwnd, "Screenshot")
     
-    ; Save to file
-    SaveScreenshot("Screenshot", A_ScriptDir "\game_capture.png")
+    ; Take screenshot
+    Send, {PrintScreen}
+    Sleep, 100
+    
+    ; Create a GUI to save the screenshot
+    Gui, Screenshot:New
+    Gui, Screenshot:Add, Picture,, % "HBITMAP:*" ClipboardAll
+    Gui, Screenshot:Hide
+    
+    ; Save to PNG
+    Gui, Screenshot:Save, %A_ScriptDir%\game_capture.png
     Gui, Screenshot:Destroy
     
     ; Show viewer
@@ -65,18 +64,36 @@ ViewerGuiClose:
     FileDelete, %A_ScriptDir%\game_capture.png
 return
 
-; Helper functions for capturing window
-PrintWindow(hwnd, control) {
-    SendMessage, 0x0B, 0, 0,, ahk_id %hwnd%  ; WM_SETREDRAW
-    ControlGet, hwndControl, Hwnd,, %control%, A
-    DllCall("PrintWindow", "Ptr", hwnd, "Ptr", hwndControl, "Uint", 0)
-    SendMessage, 0x0B, 1, 0,, ahk_id %hwnd%  ; WM_SETREDRAW
-    WinRedraw, ahk_id %hwnd%
+SaveScreenshot(x, y, w, h, filename) {
+    ; Create hidden GUI for screenshot
+    Gui, Screenshot:New, +AlwaysOnTop -Caption
+    Gui, Screenshot:Show, x%x% y%y% w%w% h%h% Hide
+    
+    ; Take screenshot
+    WinWait, ahk_class AutoHotkeyGUI
+    WinSet, Transparent, 0
+    Gui, Screenshot:Show
+    Sleep, 100
+    
+    ; Save to file
+    Send, {PrintScreen}
+    Sleep, 100
+    
+    ; Process the screenshot
+    if FileExist(filename)
+        FileDelete, %filename%
+    
+    ; Save using built-in clipboard handling
+    SavePrScrn(filename)
+    
+    ; Cleanup
+    Gui, Screenshot:Destroy
 }
 
-SaveScreenshot(control, filename) {
-    ControlGet, hwnd, Hwnd,, %control%, A
-    pBitmap := Gdip_CreateBitmapFromHBITMAP(DllCall("GetWindowDC", "Ptr", hwnd))
+SavePrScrn(filename) {
+    pToken := Gdip_Startup()
+    pBitmap := Gdip_CreateBitmapFromClipboard()
     Gdip_SaveBitmapToFile(pBitmap, filename)
     Gdip_DisposeImage(pBitmap)
+    Gdip_Shutdown(pToken)
 } 
