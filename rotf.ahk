@@ -30,7 +30,6 @@ farm() {
     moveMouse(827, 657)  ; Move to second coordinate
     click
 
-    press("1")
     press("3")
     press("3")
     press("3", "shift")
