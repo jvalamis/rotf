@@ -35,11 +35,13 @@ press(key, modifier := "") {
         SendInput, {Blind}{LShift down}
         Sleep, 20  ; Small delay for key registration
         SendInput, {%key%}
+        SendInput, {%key%}
         Sleep, 20
         SendInput, {LShift up}
     } else if (modifier = "alt") {
         SendInput, {Blind}{LAlt down}
         Sleep, 20
+        SendInput, {%key%}
         SendInput, {%key%}
         Sleep, 20
         SendInput, {LAlt up}
